@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@300;400;500;600&display=swap');
+* {
+    font-family: 'poppins', sans-serif;
+}
+body {
+    background-color: rgb(37, 37, 37);
+}
+#qrInput {
+    padding: 9px;
+}
+input[type="text"] {
+    width: 9.5%;
+    box-sizing: border-box;
+}
+#qrHeading {
+display: flex; justify-content: center; align-items: center;
+color: white;
+}
+.container {
+    display: flex; justify-content: center; align-items: center;
+
+}
+.container2 {
+     display: flex; justify-content: center; align-items: center;
+     padding: 6px;
+}
+#qrBtn {
+    border-radius: 11px;
+    cursor: pointer;
+    background: linear-gradient(45deg, rgb(228, 53, 53), rgb(56, 101, 223));
+}
+#spinner {
+  display: none;
+  width: 40px;
+  height: 40px;
+  border: 5px solid #ccc;    
+  border-top: 5px solid rgb(85, 212, 221); 
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 20px auto; 
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+#qrcode {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#warning {
+color: red;
+font-size: 14px;
+margin-top: 5px;
+display: flex; justify-content: center; align-items: center;
+}
