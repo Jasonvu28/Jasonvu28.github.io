@@ -29,9 +29,22 @@ color: white;
     cursor: pointer;
     background: linear-gradient(45deg, rgb(228, 53, 53), rgb(56, 101, 223));
     box-shadow: 0 0 11px #3adcf1;
+    transition: 0.6s ease;
+    animation: pulse 2s infinite;;
 }
 #qrBtn:hover {
     box-shadow: 0 0 15px #3adcf1;
+}
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 5px #3adcf1, 0 0 10px #3adcf1;
+    }
+    50% {
+        box-shadow: 0 0 20px #3adcf1, 0 0 6px #3adcf1;
+    }
+    100% {
+        box-shadow: 0 0 5px #3adcf1, 0 0 10px #3adcf1;
+    }
 }
 #spinner {
   display: none;
@@ -57,5 +70,27 @@ color: red;
 font-size: 14px;
 margin-top: 5px;
 display: flex; justify-content: center; align-items: center;
+}
+#copyLink {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: rgb(37, 37, 37);
+   border: none;
+   cursor: pointer;
+}
+#copyPopup {
+  width: 110px;
+  background: #30abe4;  /* green success color */
+  color: white;
+  padding: 10px 13px;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#copyPopup.show {
+  opacity: 1;
 }
 
