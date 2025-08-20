@@ -28,6 +28,10 @@ color: white;
     border-radius: 11px;
     cursor: pointer;
     background: linear-gradient(45deg, rgb(228, 53, 53), rgb(56, 101, 223));
+    box-shadow: 0 0 11px #3adcf1;
+}
+#qrBtn:hover {
+    box-shadow: 0 0 15px #3adcf1;
 }
 #spinner {
   display: none;
@@ -54,3 +58,4 @@ font-size: 14px;
 margin-top: 5px;
 display: flex; justify-content: center; align-items: center;
 }
+
