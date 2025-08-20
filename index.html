@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QR code generator</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=link"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
   </head>
   <body>
+    <p id="copyPopup" class="hidden">Link copied.</p>
     <p id="qrHeading">Website URL *</p>
     <div class="container">
       <input
@@ -15,6 +20,9 @@
         id="qrInput"
         placeholder="E.g. https://www.helloworld.com/"
       />
+      <button id="copyLink">
+        <span class="material-symbols-outlined">link</span>
+      </button>
     </div>
     <div class="container2">
       <button id="qrBtn">Generate QR code</button>
@@ -27,3 +35,4 @@
     <script src="index.js"></script>
   </body>
 </html>
+
